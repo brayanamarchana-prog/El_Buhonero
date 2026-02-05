@@ -1,0 +1,270 @@
+/* =========================
+   FONDO GENERAL Y BODY
+========================= */
+body {
+    background: url("imagenes/fondo_retro_titulo.jpg") no-repeat center center fixed; /* Imagen de fondo centrada y fija */
+    background-size: cover;                  /* La imagen ocupa todo el área del body */
+    font-family: 'Courier New', Courier, monospace; /* Fuente general del sitio */
+    margin: 0;                               /* Quita márgenes por defecto del navegador */
+    padding: 0;                              /* Quita padding por defecto */
+    line-height: 1.6;                        /* Espaciado de líneas */
+}
+
+/* =========================
+   HEADER Y NAVBAR
+========================= */
+.site-header {
+    background-image:
+        linear-gradient(rgba(14, 13, 13, 0.7), rgba(190, 184, 184, 0.7)), /* Degradado semi-transparente sobre la imagen */
+        url("imagenes/barra.jpg");                                        /* Imagen de fondo del header */
+    background-size: cover;                                               /* Cubrir todo el header */
+    background-position: center;                                          /* Centrar imagen */
+}
+
+nav {
+    display: flex;                          /* Flexbox para organizar logo y enlaces */
+    justify-content: space-between;         /* Logo a la izquierda, enlaces a la derecha */
+    align-items: center;                    /* Alinear verticalmente */
+    padding: 1rem 3rem;                     /* Espacio interno del nav */
+    max-width: 1800px;                      /* Ancho máximo del nav */
+    margin: auto;                            /* Centrado horizontal del nav */
+}
+
+.logo {
+    font-size: 2rem;                        /* Tamaño del logo */
+    font-weight: bold;                       /* Negrita */
+    color: rgb(145, 136, 136);              /* Color gris */
+}
+
+.nav-links {
+    display: flex;                          /* Flexbox para los enlaces */
+    list-style: none;                        /* Quita los puntos de la lista */
+    gap: 4rem;                               /* Espacio entre enlaces */
+}
+
+.nav-links a {
+    font-family: 'Montserrat', sans-serif;   /* Fuente específica para enlaces */
+    font-size: 0.95rem;                      /* Tamaño de texto */
+    text-transform: uppercase;               /* Texto en mayúsculas */
+    letter-spacing: 1.5px;                   /* Espaciado entre letras */
+    text-decoration: none;                   /* Quita subrayado */
+    font-weight: 700;                        /* Negrita */
+    color: #ebebeb;                          /* Color del texto */
+    transition: color 0.3s ease;             /* Suaviza cambio de color al hover */
+}
+
+.nav-links a:hover {
+    color: #f1eded;                          /* Color al pasar mouse */
+}
+
+/* =========================
+   HERO (SECCIÓN PRINCIPAL)
+========================= */
+#hero {
+    min-height: 80vh;                         /* Ocupa mínimo 80% de la altura de la pantalla */
+    padding: 2rem 1rem;                        /* Espacio interno */
+    background:
+        linear-gradient(rgba(109, 102, 102, 0.5), rgba(71, 59, 59, 0.5)),  /* Degradado encima de la imagen */
+        url("imagenes/buhonero.jpeg");                                    /* Imagen de fondo */
+    background-size: cover;                   /* Imagen cubre toda la sección */
+    background-position: center;              /* Centrar imagen */
+    display: flex;                             /* Flexbox para centrar contenido */
+    flex-direction: column;                    /* Elementos en columna */
+    justify-content: center;                   /* Centrado vertical */
+    align-items: center;                       /* Centrado horizontal */
+    text-align: center;                        /* Texto centrado */
+    color: #f1efef;                            /* Color del texto */
+}
+
+#hero h1 {
+    font-size: 6rem;                           /* Tamaño del título */
+    margin-bottom: 8rem;                       /* Espacio debajo del título */
+}
+
+#hero p {
+    font-size: 1.2rem;                         /* Tamaño del subtítulo */
+    letter-spacing: 2px;                       /* Espaciado entre letras */
+    font-weight: bold;                          /* Negrita */
+}
+
+/* =========================
+   BUSCADOR
+========================= */
+.search-box {
+    display: flex;                              /* Flexbox para input y botón */
+    align-items: center;                        /* Centrar verticalmente */
+    background: rgba(133, 128, 128, 0.75);     /* Fondo semitransparente */
+    border-radius: 50px;                        /* Bordes redondeados */
+    padding: 0.5rem;                            /* Espacio interno */
+    box-shadow: 0 0 20px rgba(255,255,255,0.3); /* Sombra del buscador */
+}
+
+.search-box input {
+    background: transparent;                   /* Fondo transparente */
+    border: none;                              /* Sin borde */
+    outline: none;                             /* Quita borde al hacer focus */
+    color: #ffffff;                            /* Color de texto */
+    font-size: 1.2rem;                         /* Tamaño del texto */
+    padding: 1rem 1.5rem;                       /* Espacio interno */
+    width: 300px;                               /* Ancho del input */
+}
+
+.search-box input::placeholder {
+    color: #cccccc;                             /* Color del placeholder */
+    letter-spacing: 1px;                        /* Espaciado letras */
+}
+
+.search-box button {
+    background: #ffffff;                         /* Fondo del botón */
+    border: none;                                /* Sin borde */
+    border-radius: 50%;                          /* Botón circular */
+    width: 50px;                                 /* Ancho del botón */
+    height: 50px;                                /* Alto del botón */
+    font-size: 1.2rem;                           /* Tamaño del texto */
+    cursor: pointer;                             /* Cambia cursor al pasar mouse */
+    transition: transform 0.2s ease, background 0.3s ease; /* Efectos suaves */
+}
+
+.search-box button:hover {
+    transform: scale(1.1);                      /* Agranda ligeramente */
+    background: #dfdede;                        /* Cambia color al pasar mouse */
+}
+
+/* =========================
+   CATÁLOGO
+========================= */
+#catalogo {
+    background: rgba(103, 101, 101, 0.4);                  /* Fondo semi-transparente para ver fondo general */
+    padding: 9rem 3rem;                           /* Espacio interno */
+    text-align: center;                            /* Texto centrado */
+    border-radius: 10px;                           /* Bordes redondeados del contenedor */
+    box-shadow: 0 0 10px rgba(255, 249, 249, 0.7); /* Sombra del contenedor */
+}
+
+.titulo-retro h2 {
+    display: inline-block;                          /* Ocupa solo el espacio del contenido */
+    padding: 1rem 2rem;                             /* Espacio interno del título */
+    color: #ffffff;                                 /* Color del texto */
+    border: 2px solid #ffffff;                      /* Borde alrededor */
+    background: rgb(145, 140, 140) no-repeat center center; /* Fondo del título */
+    background-size: cover;                          /* Fondo cubre todo el título */
+    text-shadow: 0 0 5px #1c1b1b, 0 0 10px #fff, 0 0 20px #aaa; /* Sombra de texto */
+    box-shadow: 0 0 10px rgba(280,280,280,1);       /* Sombra del cuadro */
+    margin-bottom: 2rem;                             /* Espacio debajo */
+    border-radius: 40px;                              /* Bordes redondeados de Consolas Retro */
+}
+
+.catalogo-grid {
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    min-height: 70vh;
+    display: grid;                                 /* Grid layout para tarjetas */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas adaptables */
+    gap: 7rem;                                     /* Espacio entre tarjetas */
+    max-width: 1200px;                             /* Ancho máximo del contenedor */
+    margin: 2rem auto;                             /* Centrado horizontal */
+    color: #fff;                                   /* Color del texto de tarjetas */
+}
+
+.catalogo-card:hover {
+    transform: translateY(-5px);                  /* Sube la tarjeta al pasar mouse */
+    box-shadow: 8px 8px 8px rgba(255, 255, 255, 0.25); /* Sombra al hover */
+}
+
+.card-image {
+    transition: transform 0.4 ease;
+    position: relative;                            /* Necesario para overlay */
+    overflow: hidden;                              /* Oculta contenido que sobresalga */
+}
+
+.card-overlay {
+    backdrop-filter: blur(5px);
+    position: absolute;                            /* Overlay encima de la tarjeta */
+    inset: 0;                                      /* Ocupa todo el contenedor */
+    background: rgba(64, 63, 63, 0.75);           /* Fondo semitransparente */
+    color: #efeaea;                                /* Color del texto */
+    display: flex;                                 /* Flexbox */
+    align-items: center;                            /* Centrado vertical */
+    justify-content: center;                        /* Centrado horizontal */
+    text-align: center;                             /* Texto centrado */
+    padding: 2rem;                                  /* Espacio interno */
+    opacity: 0;                                     /* Invisible por defecto */
+    transition: opacity 0.3s ease;                 /* Transición suave */
+}
+
+.catalogo-card:hover .card-overlay {
+    opacity: 1;                                     /* Muestra overlay al pasar mouse */
+}
+
+.catalogo-card.small-card:hover .card-image {
+    transform: scale(1.05);
+}
+
+.catalogo-card img {
+    width: 100%;                                   /* Imagen ocupa todo ancho de la tarjeta */
+    height: auto;                                   /* Mantiene proporción */
+    object-fit: cover;                              /* Ajusta imagen para cubrir contenedor */
+}
+
+.card-button {
+    display: inline-block;                          /* Bloque en línea */
+    width: 80%;                                     /* Ancho del botón */
+    margin-top: 3rem;                               /* Espacio arriba */
+    background: #a9a5a5;                             /* Color de fondo */
+    color: #ffffff;                                  /* Color del texto */
+    text-decoration: none;                           /* Quita subrayado */
+    padding: 1rem 1rem;                              /* Espacio interno */
+    border-radius: 90px;                             /* Bordes muy redondeados */
+    font-size: 2rem;                                 /* Tamaño del texto */
+    transition: background 0.3s ease, transform 0.4s ease; /* Efectos al pasar mouse */
+}
+
+.card-button:hover {
+    background: #545252;                             /* Cambio de color al hover */
+    transform: scale(1.2);                            /* Agranda el botón */
+}
+
+/* =========================
+   RESPONSIVE (MÓVILES)
+========================= */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;                        /* Apila logo y links */
+        padding: 1rem 2rem;                             /* Ajusta padding */
+        gap: 3rem;                                      /* Espacio entre elementos */
+    }
+
+    .nav-links {
+        flex-direction: column;                         /* Links apilados */
+        gap: 0.8rem;                                    /* Espacio entre enlaces */
+        align-items: center;                             /* Centrado */
+    }
+
+    .logo {
+        font-size: 0.6rem;                               /* Tamaño del logo más pequeño */
+    }
+
+    #hero {
+        min-height: 70vh;                                /* Altura menor en móvil */
+    }
+
+    #hero h1 {
+        font-size: 2.2rem;                               /* Título más pequeño */
+        margin-bottom: 2rem;                             /* Margen menor */
+    }
+
+    #hero p {
+        font-size: 1rem;                                 /* Subtítulo más pequeño */
+    }
+
+    .catalogo-grid {
+        grid-template-columns: 1fr;                      /* Tarjetas en una columna */
+        gap: 1.5rem;                                     /* Espacio menor entre tarjetas */
+    }
+}
+
+.catalogo-card {
+    border-radius: 60px;                                   /* Bordes muy redondeados */
+    box-shadow: 0 0 85px rgba(0,0,0,0.5);                /* Sombra grande alrededor de la tarjeta */
+}

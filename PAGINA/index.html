@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive para móviles -->
+    <title>El Buhonero</title> <!-- Título de la pestaña -->
+    <link rel="stylesheet" href="styles.css"> <!-- CSS principal -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> <!-- Fuente Montserrat -->
+</head>
+
+<body>
+    <h1 style="color:red">SI VES ESTO, EL HTML CARGA</h1>
+
+    <!-- HEADER / BARRA DE NAVEGACIÓN -->
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">EL BUHONERO</div> <!-- Logo / Nombre del sitio -->
+            <ul class="nav-links">
+                <li><a href="#catalogo">CATÁLOGO</a></li> <!-- Enlace a sección catálogo -->
+                <li><a href="#emuladores">EMULADORES</a></li> <!-- Enlace a sección emuladores -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO / SECCIÓN PRINCIPAL -->
+        <section id="hero">
+            <h1>BIENVENIDO</h1> <!-- Título principal -->
+            <p>ISOS, ROMS, BIOS</p> <!-- Subtítulo -->
+
+            <!-- BUSCADOR -->
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Buscar contenido..." aria-label="Buscar contenido"> <!-- Input de búsqueda -->
+                <button type="button">🔍</button> <!-- Botón de búsqueda -->
+            </form>
+        </section>
+
+        <!-- CATÁLOGO / SECCIÓN DE TARJETAS -->
+        <section id="catalogo">
+            <div class="titulo-retro">
+                <h2>Consolas Retro</h2> <!-- Este es el título que puedes editar y darle estilos -->
+            </div>
+
+            <div class="catalogo-grid"> <!-- Contenedor de tarjetas en grid -->
+
+                <!-- TARJETA 1 -->
+                <article class="catalogo-card">
+                    <div class="card-image">
+                        <img src="imagenes/peliculas.gif" alt="Películas"> <!-- Imagen de la tarjeta -->
+                        <div class="card-overlay">
+                            <p>Los mejores films de todos los tiempos</p> <!-- Texto que aparece al pasar el mouse -->
+                        </div>
+                    </div>
+                    <h3>Películas</h3> <!-- Título de la tarjeta -->
+                    <a href="./peliculas/index.html" class="card-button">Ver Películas</a> <!-- Botón que puedes editar aquí -->
+                </article>
+
+                <!-- TARJETA 2 -->
+                <article class="catalogo-card">
+                    <div class="card-image">
+                        <img src="imagenes/playstation_1.gif" alt="PlayStation 1">
+                        <div class="card-overlay">
+                            <p>Una de las máquinas más clásicas de la historia</p>
+                        </div>
+                    </div>
+                    <h3>PlayStation 1</h3>
+                    <a href="./ps1/index.html" class="card-button">Ver ROMs</a> <!-- Botón de ROMs -->
+                </article>
+
+                <!-- TARJETA 3 -->
+                <article class="catalogo-card">
+                    <div class="card-image">
+                        <img src="imagenes/playstation_2.gif" alt="PlayStation 2">
+                        <div class="card-overlay">
+                            <p>La consola que revolucionó la industria de los videojuegos</p>
+                        </div>
+                    </div>
+                    <h3>PlayStation 2</h3>
+                    <a href="./ps2/index.html" class="card-button">Ver ROMs</a>
+                </article>
+
+                <!-- TARJETA 4 -->
+                <article class="catalogo-card">
+                    <div class="card-image">
+                        <img src="imagenes/playstation_portable.gif" alt="PSP">
+                        <div class="card-overlay">
+                            <p>Tiempos aquellos donde teníamos el poder en la palma de la mano</p>
+                        </div>
+                    </div>
+                    <h3>PlayStation Portable</h3>
+                    <a href="./psp/index.html" class="card-button">Ver ROMs</a>
+                </article>
+
+                <!-- TARJETA 5 -->
+                <article class="catalogo-card">
+                    <div class="card-image">
+                        <img src="imagenes/nintendo_nes.gif" alt="NES">
+                        <div class="card-overlay">
+                            <p>Clásicos de 8 bits que marcaron historia</p>
+                        </div>
+                    </div>
+                    <h3>Nintendo NES</h3>
+                    <a href="./nes/index.html" class="card-button">Ver ROMs</a>
+                </article>
+
+                <!-- TARJETA 6 -->
+                <article class="catalogo-card">
+                    <div class="card-image">
+                        <img src="imagenes/super_nintendo.gif" alt="Super Nintendo">
+                        <div class="card-overlay">
+                            <p>La Super Nintendo, la consola que nos ofreció horas y horas de diversión</p>
+                        </div>
+                    </div>
+                    <h3>Super Nintendo</h3>
+                    <a href="./snes/index.html" class="card-button">Ver ROMs</a>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script> <!-- Script del buscador -->
+</body>
+</html>
